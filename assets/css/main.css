@@ -15,9 +15,18 @@ body,
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei',
     'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif;
-  background: linear-gradient(180deg, #f7f8fb 0%, #eef1f7 100%);
-  color: #1f2937;
+  color: #d6e4f5;
   -webkit-font-smoothing: antialiased;
+  background-color: #050a18;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(56, 189, 248, 0.18), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 100%, rgba(168, 85, 247, 0.18), transparent 60%),
+    linear-gradient(rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+    linear-gradient(180deg, #050a18 0%, #07112a 100%);
+  background-size: auto, auto, 40px 40px, 40px 40px, auto;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 button {

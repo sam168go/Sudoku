@@ -68,34 +68,48 @@ useHead({
 }
 
 .header h1 {
-  font-size: clamp(24px, 4vw, 32px);
-  margin: 0 0 6px;
-  color: #0f172a;
-  letter-spacing: 0.02em;
+  font-size: clamp(26px, 4.5vw, 36px);
+  margin: 0 0 8px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #67e8f9 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 24px rgba(103, 232, 249, 0.25);
 }
 
 .subtitle {
   margin: 0;
-  color: #475569;
+  color: #94a3b8;
   font-size: 14px;
+  letter-spacing: 0.04em;
 }
 
 .status {
   margin: 0;
   font-size: 14px;
-  color: #475569;
+  color: #94a3b8;
   min-height: 1.5em;
+  letter-spacing: 0.04em;
 }
 
 .status--invalid,
 .status--unsolvable {
-  color: #b91c1c;
+  color: #fb7185;
   font-weight: 600;
+  text-shadow: 0 0 12px rgba(251, 113, 133, 0.45);
 }
 
 .status--solved {
-  color: #047857;
+  color: #34d399;
   font-weight: 600;
+  text-shadow: 0 0 12px rgba(52, 211, 153, 0.45);
+}
+
+.status--solving {
+  color: #67e8f9;
+  text-shadow: 0 0 12px rgba(103, 232, 249, 0.45);
 }
 
 .actions {
@@ -107,20 +121,26 @@ useHead({
 
 .btn {
   appearance: none;
-  border: 1px solid #cbd5e1;
-  background: #fff;
-  color: #1f2937;
-  padding: 10px 20px;
+  border: 1px solid rgba(103, 232, 249, 0.35);
+  background: rgba(15, 23, 42, 0.6);
+  color: #cbd5e1;
+  padding: 10px 22px;
   border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: transform 0.05s ease, background 0.12s ease, border-color 0.12s ease;
+  backdrop-filter: blur(6px);
+  transition: transform 0.05s ease, background 0.18s ease, border-color 0.18s ease,
+    box-shadow 0.18s ease, color 0.18s ease;
 }
 
 .btn:hover {
-  border-color: #94a3b8;
-  background: #f8fafc;
+  border-color: rgba(103, 232, 249, 0.8);
+  color: #e0f2fe;
+  background: rgba(8, 47, 73, 0.55);
+  box-shadow: 0 0 0 1px rgba(103, 232, 249, 0.2), 0 0 18px rgba(103, 232, 249, 0.25);
 }
 
 .btn:active {
@@ -128,25 +148,34 @@ useHead({
 }
 
 .btn--primary {
-  background: #2563eb;
-  border-color: #2563eb;
+  background: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
+  border-color: transparent;
   color: #fff;
+  box-shadow: 0 0 22px rgba(99, 102, 241, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .btn--primary:hover {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
+  background: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
+  box-shadow: 0 0 28px rgba(129, 140, 248, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
 .btn--ghost {
   background: transparent;
-  color: #475569;
+  color: #94a3b8;
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.btn--ghost:hover {
+  color: #cbd5e1;
+  border-color: rgba(148, 163, 184, 0.6);
+  box-shadow: none;
 }
 
 .footer {
   margin-top: 24px;
   font-size: 12px;
-  color: #94a3b8;
+  color: #475569;
+  letter-spacing: 0.05em;
 }
 
 .footer p {

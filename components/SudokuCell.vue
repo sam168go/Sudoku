@@ -47,45 +47,49 @@ function onInput(event: Event) {
 .cell {
   width: 100%;
   height: 100%;
-  border: 1px solid #cbd5e1;
-  background: #fff;
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  background: rgba(8, 15, 36, 0.92);
   text-align: center;
   font-size: clamp(18px, 4vw, 26px);
   font-weight: 500;
-  color: #2563eb;
+  color: #67e8f9;
   outline: none;
   padding: 0;
   border-radius: 0;
-  transition: background 0.12s ease, box-shadow 0.12s ease;
+  caret-color: #67e8f9;
+  transition: background 0.12s ease, box-shadow 0.12s ease, color 0.12s ease;
 }
 
 .cell:focus {
-  background: #eff6ff;
-  box-shadow: inset 0 0 0 2px #3b82f6;
+  background: rgba(14, 116, 144, 0.25);
+  box-shadow: inset 0 0 0 2px #22d3ee, 0 0 18px rgba(34, 211, 238, 0.45);
   position: relative;
   z-index: 1;
 }
 
 .cell.given {
-  color: #111827;
+  color: #f1f5f9;
   font-weight: 700;
+  text-shadow: 0 0 6px rgba(241, 245, 249, 0.25);
 }
 
 .cell.solved {
-  color: #2563eb;
+  color: #67e8f9;
+  text-shadow: 0 0 8px rgba(103, 232, 249, 0.55);
 }
 
 .cell.conflict {
-  background: #fee2e2;
-  color: #b91c1c;
+  background: rgba(190, 18, 60, 0.35);
+  color: #fecaca;
+  text-shadow: 0 0 8px rgba(251, 113, 133, 0.6);
 }
 
 .cell.right-edge {
-  border-right: 2px solid #1f2937;
+  border-right: 2px solid rgba(103, 232, 249, 0.55);
 }
 
 .cell.bottom-edge {
-  border-bottom: 2px solid #1f2937;
+  border-bottom: 2px solid rgba(103, 232, 249, 0.55);
 }
 
 .cell[readonly] {

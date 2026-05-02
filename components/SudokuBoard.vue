@@ -43,10 +43,14 @@ function onCellUpdate(row: number, col: number, value: number) {
   grid-template-rows: repeat(9, 1fr);
   aspect-ratio: 1 / 1;
   width: min(92vw, 480px);
-  border: 2px solid #1f2937;
-  background: #1f2937;
-  border-radius: 6px;
+  border: 1px solid rgba(103, 232, 249, 0.5);
+  background: rgba(103, 232, 249, 0.55);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(103, 232, 249, 0.15),
+    0 0 30px rgba(56, 189, 248, 0.25),
+    0 0 60px rgba(99, 102, 241, 0.18),
+    0 20px 50px -20px rgba(0, 0, 0, 0.7);
 }
 </style>
