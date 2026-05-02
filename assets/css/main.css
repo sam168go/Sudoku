@@ -13,21 +13,17 @@ body,
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei',
     'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif;
-  color: #f5d0fe;
+  color: #0f172a;
   -webkit-font-smoothing: antialiased;
-  background-color: #0a0418;
+  background-color: #fafafa;
   background-image:
-    radial-gradient(ellipse 70% 55% at 15% 0%, rgba(236, 72, 153, 0.22), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 85% 100%, rgba(34, 211, 238, 0.22), transparent 60%),
-    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(168, 85, 247, 0.12), transparent 70%),
-    linear-gradient(rgba(236, 72, 153, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(34, 211, 238, 0.05) 1px, transparent 1px),
-    linear-gradient(180deg, #0a0418 0%, #160829 100%);
-  background-size: auto, auto, auto, 44px 44px, 44px 44px, auto;
+    radial-gradient(ellipse 60% 50% at 0% 0%, rgba(99, 102, 241, 0.06), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(244, 114, 182, 0.05), transparent 70%);
   background-attachment: fixed;
   min-height: 100vh;
+  letter-spacing: -0.005em;
 }
 
 button {
